@@ -5,14 +5,14 @@ class StringDisplay(AbstractDisplay):
         self.string = string
         self.width = len(string.encode('gbk'))
 
-    def open(self):
-        self.print_line()
+    def _open(self):
+        self._print_line()
 
-    def print(self):
+    def _print(self):
         print(f"|{self.string}|")
     
-    def close(self):
-        self.print_line()
+    def _close(self):
+        self._print_line()
     
-    def print_line(self):
+    def _print_line(self):
         print("+" + "-" * self.width + "+")

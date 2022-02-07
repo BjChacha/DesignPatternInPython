@@ -5,11 +5,11 @@ class CharDisplay(AbstractDisplay):
     def __init__(self, char):
         self.char = char
 
-    def open(self):
+    def _open(self):
         print("<<")
 
-    def print(self):
+    def _print(self):
         print(self.char)
 
-    def close(self):
+    def _close(self):
         print(">>")

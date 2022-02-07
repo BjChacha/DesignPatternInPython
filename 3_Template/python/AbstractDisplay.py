@@ -1,15 +1,15 @@
 class AbstractDisplay:
-    def open(self):
+    def _open(self):
         raise NotImplementedError
 
-    def print(self):
+    def _print(self):
         raise NotImplementedError
     
-    def close(self):
+    def _close(self):
         raise NotImplementedError
 
     def display(self):
-        self.open()
+        self._open()
         for _ in range(5):
-            self.print()
-        self.close()
+            self._print()
+        self._close()
