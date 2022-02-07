@@ -1,7 +1,7 @@
 class Book():
 
     def __init__(self, name):
-        self.name = name
+        self._name = name
 
     def get_name(self):
-        return self.name
+        return self._name

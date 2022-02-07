@@ -1,9 +1,9 @@
 class Banner:
     def __init__(self, string):
-        self.string = string
+        self._string = string
 
     def show_with_paren(self):
-        print(f'({self.string})')
+        print(f'({self._string})')
 
     def show_with_aster(self):
-        print(f'*{self.string}*')
+        print(f'*{self._string}*')
