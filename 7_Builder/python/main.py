@@ -26,8 +26,8 @@ def main():
 
 
 def usage():
-    print("Usage: python Main plain".ljust(25) + "编写纯文本文档")
-    print("Usage: python Main html".ljust(25) + "编写HTML文档")
+    print("Usage: python main.py plain".ljust(25) + "编写纯文本文档")
+    print("Usage: python main.py html".ljust(25) + "编写HTML文档")
 
 if __name__ == "__main__":
     main()
